@@ -1,5 +1,5 @@
 module.exports = async(app) => {
     app.get('/', (req, res) => {
-        res.send('Hi')
+        res.render('home')
     })
 }

@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.header{
+  
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    margin: 16px 30px 0px;
+   
+}
+.header a{
+    color: rgba(0,0,0,0.87);
+}
+.imagenes{
+    text-decoration: none;
+}
+.gmail{
+    text-decoration: underline;
+}
+.sesion{
+    border: 1px solid #4285f4;
+    background: #4285f4;
+    color: white;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    font-weight: bold;
+    width: auto;
+}
+.logo{
+    padding-top: 108px;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-search{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+.search{
+    display: grid;
+    grid-template-columns: 52px 480px 52px;
+    grid-template-rows:46px;
+    grid-template-areas: " lupa caja micro";
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    
+}
+.lupa{
+    grid-area: lupa;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #dfe1e5 solid 1px;
+    border-right: none;
+    -moz-border-radius: 100px 0px 0px 100px;
+    -webkit-border-radius: 100px 0px 0px 100px;
+    border-radius: 100px 0px 0px 100px;
+    -webkit-box-shadow: -17px 10px 39px -20px rgba(0,0,0,0.46);
+-moz-box-shadow: -17px 10px 39px -20px rgba(0,0,0,0.46);
+box-shadow: -17px 10px 39px -20px rgba(0,0,0,0.46);
+
+}
+.caja{
+    grid-area: caja;
+    border-top: #dfe1e5 solid 1px ;
+    border-bottom:#dfe1e5 solid 1px ;
+    border-left: none;
+    height: 100%;
+    position: relative;
+    -webkit-box-shadow: 0px 25px 39px -20px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px 25px 39px -20px rgba(0,0,0,0.46);
+box-shadow: 0px 25px 39px -20px rgba(0,0,0,0.46);
+
+}
+.micro{
+    grid-area: micro;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #dfe1e5 solid 1px;
+    border-left: none;
+    -moz-border-radius: 0px 100px 100px 0px;
+    -webkit-border-radius: 0px 100px 100px 0px;
+    border-radius: 0px 100px 100px 0px;
+    -webkit-box-shadow: 17px 10px 39px -20px rgba(0,0,0,0.46);
+-moz-box-shadow: 17px 10px 39px -20px rgba(0,0,0,0.46);
+box-shadow: 17px 10px 39px -20px rgba(0,0,0,0.46);
+
+    
+}
+.busqueda{
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+}
+input.busqueda:focus {
+
+    outline:none ;
+    outline-width: 0 ;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.btns{
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
+    grid-template-rows: 36px;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 55px;
+}
+
+.buscar, .suerte{
+   color: #5F6368;
+   font-size: 14px;
+   background-color: #f2f2f2;
+   cursor: pointer;
+   border-radius: 4px;
+   min-width: 54px;
+   line-height: 27px;
+   border-bottom: none;
+   border-right: none;
+}
+.btns a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.creditos{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.creditos a{
+    color:#1a0dab;
+    text-decoration: none;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+
+}
+.rows{
+    display: grid;
+    grid-template-columns: 100vmax;
+    justify-content: flex-start; 
+    color: rgba(0,0,0,.54);
+    background: #f2f2f2;
+}
+.region {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    line-height: 41px;
+    color: rgba(0,0,0,.54);
+    position: relative;
+    padding-left: 30px; 
+}
+.region{
+    font-size: 15px;
+    border:  #e4e4e4 solid 1px;
+
+}
+.menu-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    color: rgba(0,0,0,.54);
+    position: relative;
+     padding-left: 30px;
+    /*margin-right: 30px;  */
+}
+.menu-footer a{
+   margin-right: 23px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.698);
+}
+.menu-footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?129p9x');
+    src:  url('fonts/icomoon.eot?129p9x#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?129p9x') format('truetype'),
+      url('../fonts/icomoon.woff?129p9x') format('woff'),
+      url('../fonts/icomoon.svg?129p9x#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-app:before {
+    content: "\e900";
+    font-size: 23px;
+    margin: 0px 8px;
+    opacity: .55;
+  }
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/search/icomoon.eot?feqwdj');
+    src:  url('../fonts/search/icomoon.eot?feqwdj#iefix') format('embedded-opentype'),
+      url('../fonts/search/icomoon.ttf?feqwdj') format('truetype'),
+      url('../fonts/search/icomoon.woff?feqwdj') format('woff'),
+      url('../fonts/search/icomoon.svg?feqwdj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-search:before {
+    content: "\e908";
+    opacity: .35;
+    font-size: 1.1em;
+  }

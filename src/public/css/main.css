@@ -1,0 +1,26 @@
+/* Home */
+
+.navigation{
+    background: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation p{
+    margin: 10px;
+}
+
+.navigation a{
+    color: #000;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+.homeContainer{
+    background: #fff;
+    color: #000;
+}
